@@ -1,6 +1,6 @@
 ---
-title: "Team XXX"
-sidebar: false 
+title: "DataFlame"
+sidebar: false
 ---
 
 This is our project webpage.
@@ -11,14 +11,55 @@ This is our template.
 
 # Team Members
 
-1.  [Edin_Džeko](https://tr.wikipedia.org/wiki/Edin_D%C5%BEeko)
+1. [Sema Nur Meydan](https://emu-hacettepe-analytics.github.io/emu430-spring2026-semameydan/)
 
-2.  [Dušan Tadić](https://tr.wikipedia.org/wiki/Du%C5%A1an_Tadi%C4%87)
+2. [Eylül Ezgi Özer](https://emu-hacettepe-analytics.github.io/emu430-spring2026-eyluleozer/)
 
-3.  [Frederico Rodrigues de Paula Santos](https://tr.wikipedia.org/wiki/Fred_(1993_do%C4%9Fumlu_futbolcu))
+3. [Nursima Tek](https://github.com/emu-hacettepe-analytics/emu430-spring2026-nursimatek)
 
-4.  [Sebastian Szymański](https://tr.wikipedia.org/wiki/Sebastian_Szyma%C5%84ski)
+4. [Mert Efe Zeybek](https://emu-hacettepe-analytics.github.io/emu430-spring2026-zeybek-mert/)
 
 # Project Topic
 
+Analysis of Forest Fires in Turkey (1988–2024)
+
 # Data Set
+
+For our project, the data set provided by the Orman Genel Müdürlüğü (OGM), the official institution responsible for forest management in Turkey, was selected. This data set contains comprehensive statistics on forest fires between 1988 and 2024.
+
+The selected data set includes the following information:
+
+- Number of forest fires by year
+- Total area burned (hectares)
+- Fire distribution by region
+- Fire causes
+- Detailed data by province and region
+
+# Motivation and Purpose
+
+Forest fires have become a significant environmental and socio-economic problem in Turkey, especially in recent years, due to climate change and the increase in human activities. Therefore, understanding the temporal and spatial distribution of fires and their root causes is of great importance.
+
+Our aim in this project is to analyze the yearly changes in forest fires in Turkey, identify high-risk regions, and examine the underlying causes of fires.
+
+# Analysis Plan
+
+The analyses will be conducted using the R programming language. During the analysis process, R packages such as dplyr, ggplot2, and readxl will be used.
+
+## 1. Temporal Analysis (Time Series)
+
+- The number of fires and area burned will be examined by year
+- Increasing/decreasing trends will be analyzed
+
+## 2. Spatial Analysis (Regional Comparison)
+
+- Fire distribution by region will be compared
+- Risky regions will be identified
+
+## 3. Cause Analysis
+
+- The causes of fires will be analyzed
+- The proportion of human-caused fires will be examined
+
+# Resource
+
+[OGM Official Statistics](https://www.ogm.gov.tr/tr/e-kutuphane/resmi-istatistikler?utm_.com)
