@@ -2,8 +2,115 @@
 title: "Analysis"
 ---
 
-About this site
+# Analysis of Forest Fires in Turkey
+
+This page presents the exploratory data analysis of forest fire statistics in Turkey between 1988 and 2024.
+
+# Key Takeaways
+
+- Forest fires in Turkey fluctuate significantly over time.
+- Certain years experienced extremely high burned forest areas.
+- Burned areas and fire frequency do not always increase together.
+- Forest fires remain an important environmental issue in Turkey.
+
+# Load Libraries
 
 ```{r}
-1 + 1
+#| echo: true
+#| code-fold: true
+
+library(tidyverse)
+library(readxl)
+library(ggplot2)
+library(dplyr)
+library(janitor)
 ```
+
+# Import Dataset
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+fires <- read_excel("forest_fires.xlsx") %>%
+  clean_names()
+
+names(fires)
+```
+
+# Rename Columns
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+fires <- fires %>%
+  rename(
+    year = 1,
+    burned_area = 2,
+    number_of_fires = 3
+  )
+
+glimpse(fires)
+summary(fires)
+```
+
+# Number of Forest Fires by Year
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+ggplot(fires, aes(x = year, y = number_of_fires)) +
+  geom_line(color = "red") +
+  geom_point(color = "darkred") +
+  labs(
+    title = "Number of Forest Fires by Year",
+    x = "Year",
+    y = "Number of Fires"
+  ) +
+  theme_minimal()
+```
+
+The graph shows yearly fluctuations in the number of forest fires in Turkey.
+
+# Burned Forest Area by Year
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+ggplot(fires, aes(x = year, y = burned_area)) +
+  geom_line(color = "darkgreen") +
+  geom_point(color = "forestgreen") +
+  labs(
+    title = "Burned Forest Area by Year",
+    x = "Year",
+    y = "Burned Area"
+  ) +
+  theme_minimal()
+```
+
+The burned forest area changes significantly across years.
+
+# Relationship Between Fire Numbers and Burned Area
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+ggplot(fires, aes(x = number_of_fires, y = burned_area)) +
+  geom_point(color = "orange", size = 3) +
+  labs(
+    title = "Relationship Between Number of Fires and Burned Area",
+    x = "Number of Fires",
+    y = "Burned Area"
+  ) +
+  theme_minimal()
+```
+
+Some years experienced fewer fires but larger burned forest areas.
+
+# Conclusion
+
+Forest fires continue to be an important environmental issue in Turkey. The analysis shows that both fire frequency and burned area vary considerably over time.
