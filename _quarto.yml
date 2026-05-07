@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "xxx' Project Lab"
+  title: "DataFlame Project Lab"
   navbar:
     search: true
     left:
@@ -14,25 +14,25 @@ website:
       - text: Analysis
         href: analysis.qmd
 
-            
     tools:
       - icon: github
-        href: https://twitter.com
+        href: https://github.com/YOUR-GITHUB-REPO-LINK
 
   page-navigation: true
   back-to-top-navigation: true
+
   page-footer:
-    center: "Hacettepe IE - EMU 430 - Fall 2024" 
+    center: "Hacettepe IE - EMU 430 - Spring 2026 | DataFlame"
     border: true
+
 format:
   html:
     toc: true
     toc-location: left
-    theme: 
-      light: simplex 
+    theme:
+      light: simplex
       dark: cyborg
     css: styles.css
-
 
 editor: visual
 
