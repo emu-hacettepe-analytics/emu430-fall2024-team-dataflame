@@ -16,7 +16,7 @@ website:
 
     tools:
       - icon: github
-        href: https://github.com/YOUR-GITHUB-REPO-LINK
+        href: https://emu-hacettepe-analytics.github.io/emu430-fall2024-team-dataflame/
 
   page-navigation: true
   back-to-top-navigation: true
