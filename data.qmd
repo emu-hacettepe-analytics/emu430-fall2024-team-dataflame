@@ -1,5 +1,5 @@
 ---
-title: "Data"
+title: "DataFlame's Lab"
 ---
 
 # Data
@@ -18,17 +18,17 @@ This dataset contains yearly forest fire statistics in Turkey between 1988 and 2
 
 The dataset includes the following variables:
 
-- `Year`: Year of observation
-- `Burned_area`: Total burned forest area in hectares
-- `Number_of_fires`: Total number of forest fires
-- `Intentional_number`: Number of intentional fires
-- `Intentional_hectare`: Burned area caused by intentional fires
-- `Negligence_number`: Number of negligence-caused fires
-- `Negligence_hectare`: Burned area caused by negligence
-- `Natural_number`: Number of natural fires
-- `Natural_hecatre`: Burned area caused by natural fires
-- `Unknown_number`: Number of fires with unknown causes
-- `Unknown_hectare`: Burned area caused by unknown reasons
+-   `Year`: Year of observation
+-   `Burned_area`: Total burned forest area in hectares
+-   `Number_of_fires`: Total number of forest fires
+-   `Intentional_number`: Number of intentional fires
+-   `Intentional_hectare`: Burned area caused by intentional fires
+-   `Negligence_number`: Number of negligence-caused fires
+-   `Negligence_hectare`: Burned area caused by negligence
+-   `Natural_number`: Number of natural fires
+-   `Natural_hecatre`: Burned area caused by natural fires
+-   `Unknown_number`: Number of fires with unknown causes
+-   `Unknown_hectare`: Burned area caused by unknown reasons
 
 The data was selected because forest fires are an important environmental and socio-economic issue in Turkey. Analyzing these statistics helps us understand long-term trends, fire severity, and the role of different fire causes.
 
