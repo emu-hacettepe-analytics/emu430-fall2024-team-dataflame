@@ -2,4 +2,75 @@
 title: "Data"
 ---
 
-Data source: xxx
+# Data
+
+# Data Source
+
+The dataset used in this project was obtained from the official statistics published by the General Directorate of Forestry (OGM), the institution responsible for forest management and forest fire monitoring in Turkey.
+
+The official data source can be accessed from the following link:
+
+[OGM Official Statistics](https://www.ogm.gov.tr/tr/e-kutuphane/resmi-istatistikler?utm_source=chatgpt.com)
+
+# About the Dataset
+
+This dataset contains forest fire statistics in Turkey between 1988 and 2024.
+
+The dataset includes:
+
+- Number of forest fires by year
+- Total burned forest area
+- Fire statistics over time
+- Information related to forest fire frequency and severity
+
+The data was selected because forest fires have become an important environmental and socio-economic issue in Turkey in recent years.
+
+# Importing the Dataset
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+library(readxl)
+library(dplyr)
+library(janitor)
+
+fires <- read_excel("forest_fires.xlsx") %>%
+  clean_names()
+
+head(fires)
+```
+
+# Data Preparation
+
+The dataset was cleaned and prepared for analysis.
+
+The following preprocessing steps were applied:
+
+- Column names were standardized
+- Data structure was checked
+- Variables were prepared for visualization and analysis
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+glimpse(fires)
+
+summary(fires)
+```
+
+# Final Dataset
+
+The cleaned dataset was saved in `.RData` format for reproducibility.
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+save(fires, file = "final_forest_fires.RData")
+```
+
+The final dataset can be downloaded below:
+
+[Download Final Dataset](final_forest_fires.RData)

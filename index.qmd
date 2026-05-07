@@ -62,4 +62,4 @@ The analyses will be conducted using the R programming language. During the anal
 
 # Resource
 
-[OGM Official Statistics](https://www.ogm.gov.tr/tr/e-kutuphane/resmi-istatistikler?utm_.com)
+[OGM Official Statistics](https://www.ogm.gov.tr/tr/e-kutuphane/resmi-istatistikler)
