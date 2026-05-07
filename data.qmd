@@ -6,24 +6,31 @@ title: "Data"
 
 # Data Source
 
-The dataset used in this project was obtained from the official statistics published by the General Directorate of Forestry (OGM), the institution responsible for forest management and forest fire monitoring in Turkey.
+The dataset used in this project was obtained from the official statistics published by the General Directorate of Forestry (OGM), the official institution responsible for forest management and forest fire monitoring in Turkey.
 
 The official data source can be accessed from the following link:
 
-[OGM Official Statistics](https://www.ogm.gov.tr/tr/e-kutuphane/resmi-istatistikler?utm_source=chatgpt.com)
+[OGM Official Statistics](https://www.ogm.gov.tr/tr/e-kutuphane/resmi-istatistikler)
 
 # About the Dataset
 
-This dataset contains forest fire statistics in Turkey between 1988 and 2024.
+This dataset contains yearly forest fire statistics in Turkey between 1988 and 2024.
 
-The dataset includes:
+The dataset includes the following variables:
 
-- Number of forest fires by year
-- Total burned forest area
-- Fire statistics over time
-- Information related to forest fire frequency and severity
+- `Year`: Year of observation
+- `Burned_area`: Total burned forest area in hectares
+- `Number_of_fires`: Total number of forest fires
+- `Intentional_number`: Number of intentional fires
+- `Intentional_hectare`: Burned area caused by intentional fires
+- `Negligence_number`: Number of negligence-caused fires
+- `Negligence_hectare`: Burned area caused by negligence
+- `Natural_number`: Number of natural fires
+- `Natural_hecatre`: Burned area caused by natural fires
+- `Unknown_number`: Number of fires with unknown causes
+- `Unknown_hectare`: Burned area caused by unknown reasons
 
-The data was selected because forest fires have become an important environmental and socio-economic issue in Turkey in recent years.
+The data was selected because forest fires are an important environmental and socio-economic issue in Turkey. Analyzing these statistics helps us understand long-term trends, fire severity, and the role of different fire causes.
 
 # Importing the Dataset
 
@@ -31,6 +38,7 @@ The data was selected because forest fires have become an important environmenta
 #| echo: true
 #| code-fold: true
 
+library(tidyverse)
 library(readxl)
 library(dplyr)
 library(janitor)
@@ -43,21 +51,21 @@ head(fires)
 
 # Data Preparation
 
-The dataset was cleaned and prepared for analysis.
+The original dataset contains some missing values represented with `-`, especially for fire cause variables before 1997. These values were converted into `NA`.
 
-The following preprocessing steps were applied:
-
-- Column names were standardized
-- Data structure was checked
-- Variables were prepared for visualization and analysis
+Additionally, column names were standardized and numeric values were converted into a suitable format for analysis.
 
 ```{r}
 #| echo: true
 #| code-fold: true
 
-glimpse(fires)
+fires_clean <- fires %>%
+  mutate(across(everything(), ~na_if(as.character(.), "-"))) %>%
+  mutate(across(everything(), ~as.numeric(gsub(",", ".", .))))
 
-summary(fires)
+glimpse(fires_clean)
+
+summary(fires_clean)
 ```
 
 # Final Dataset
@@ -68,9 +76,9 @@ The cleaned dataset was saved in `.RData` format for reproducibility.
 #| echo: true
 #| code-fold: true
 
-save(fires, file = "final_forest_fires.RData")
+save(fires_clean, file = "final_forest_fires.RData")
 ```
 
-The final dataset can be downloaded below:
+The final cleaned dataset can be downloaded here:
 
 [Download Final Dataset](final_forest_fires.RData)
