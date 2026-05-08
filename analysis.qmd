@@ -187,3 +187,8 @@ fires %>%
 # Conclusion
 
 Forest fires continue to be an important environmental issue in Turkey. The analysis shows that both fire frequency and burned area vary considerably over time. Human-related causes, especially negligence, play an important role in forest fire occurrence.
+
+
+::: callout-note
+Assistance was received in translating certain sections into English and in writing the code.
+:::
