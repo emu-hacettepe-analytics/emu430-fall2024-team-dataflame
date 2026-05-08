@@ -5,7 +5,6 @@ body {
   background:
     linear-gradient(rgba(10, 30, 20, 0.75), rgba(10, 30, 20, 0.85)),
     url("https://images.unsplash.com/photo-1473448912268-2022ce9509d8");
-
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -21,13 +20,12 @@ h1, h2, h3 {
   margin-bottom: 10px;
 }
 
-/* 🔥 ANA BAŞLIK (ÖZEL EFEKT) */
 h1 {
   font-size: 2.2rem;
   text-shadow: 0 0 12px rgba(120, 255, 170, 0.6);
 }
 
-/* 🍃 PARAGRAPH */
+/* 🍃 TEXT */
 p {
   color: #e6f5ea;
   font-size: 1rem;
@@ -77,14 +75,14 @@ pre, code {
   padding: 5px;
 }
 
-/* 📌 CALLOUT NOTE (senin notlar için) */
+/* 📌 CALLOUT NOTE */
 .callout-note {
   background-color: rgba(0, 80, 40, 0.4);
   border-left: 5px solid #7fffaa;
   border-radius: 10px;
 }
 
-/* 🔥 BONUS: HOVER EFFECT CARDS */
+/* 🔥 HOVER EFFECT */
 main:hover {
   transform: scale(1.005);
   transition: 0.3s;
