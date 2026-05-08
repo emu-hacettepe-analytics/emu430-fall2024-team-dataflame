@@ -87,3 +87,11 @@ main:hover {
   transform: scale(1.005);
   transition: 0.3s;
 }
+/* 🌫️ SIDEBAR (On this page kısmı) */
+.sidebar, 
+.toc, 
+#TOC {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+}
