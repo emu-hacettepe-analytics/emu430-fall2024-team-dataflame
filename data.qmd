@@ -82,3 +82,8 @@ save(fires_clean, file = "final_forest_fires.RData")
 The final cleaned dataset can be downloaded here:
 
 [Download Final Dataset](final_forest_fires.RData)
+
+
+::: callout-note
+Assistance was received in translating certain sections into English and in writing the code.
+:::
