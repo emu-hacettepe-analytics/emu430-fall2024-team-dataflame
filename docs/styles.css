@@ -1,44 +1,89 @@
-/* 🌲 Forest Theme Background */
+/* 🌲 GLOBAL FONT & BODY */
 body {
-  background: 
-    linear-gradient(rgba(0, 40, 20, 0.6), rgba(0, 40, 20, 0.6)),
-    url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
-    
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background:
+    linear-gradient(rgba(10, 30, 20, 0.75), rgba(10, 30, 20, 0.85)),
+    url("https://images.unsplash.com/photo-1473448912268-2022ce9509d8");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #f5f5f5;
+  color: #f1f8f5;
 }
 
-/* 🌿 Headings */
+/* 🌿 HEADINGS */
 h1, h2, h3 {
-  color: #d4edda;
-  font-weight: bold;
-  text-shadow: 0 0 10px rgba(100, 255, 150, 0.5);
+  color: #c8f7c5;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-/* 🍃 Paragraphs */
+h1 {
+  font-size: 2.2rem;
+  text-shadow: 0 0 12px rgba(120, 255, 170, 0.6);
+}
+
+/* 🍃 TEXT */
 p {
-  color: #e8f5e9;
+  color: #e6f5ea;
+  font-size: 1rem;
 }
 
-/* 🌳 Main Content Box */
+/* 🌳 CONTENT BOX */
 main {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 25px;
+  border-radius: 18px;
+  max-width: 1100px;
+  margin: auto;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
 }
 
-/* 🌲 Navbar */
+/* 🌲 NAVBAR */
 .navbar {
-  background-color: rgba(0, 60, 30, 0.9) !important;
+  background: rgba(0, 50, 30, 0.9) !important;
+  backdrop-filter: blur(6px);
 }
 
 .navbar a {
-  color: #c8e6c9 !important;
+  color: #d7fbd3 !important;
+  font-weight: 500;
 }
 
-/* 🌱 Link Hover Effect */
+.navbar a:hover {
+  color: #7fffaa !important;
+}
+
+/* 🌱 LINKS */
+a {
+  color: #a5f3c2;
+  transition: 0.3s;
+}
+
 a:hover {
-  color: #81c784 !important;
+  color: #5fff9c;
+  text-decoration: underline;
+}
+
+/* 📊 CODE BLOCKS */
+pre, code {
+  background-color: rgba(20, 40, 30, 0.85);
+  color: #c8f7c5;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+/* 📌 CALLOUT NOTE */
+.callout-note {
+  background-color: rgba(0, 80, 40, 0.4);
+  border-left: 5px solid #7fffaa;
+  border-radius: 10px;
+}
+
+/* 🔥 HOVER EFFECT */
+main:hover {
+  transform: scale(1.005);
+  transition: 0.3s;
 }
