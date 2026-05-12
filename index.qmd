@@ -1,23 +1,17 @@
 ---
-title: "DataFlame's Lab"
+title: "DataFlame"
 sidebar: false
 ---
 
-This is our project webpage.
-
-Please stay tuned to follow our project activities.
-
-This is our template.
-
 # Team Members
 
-1. [Sema Nur Meydan](https://emu-hacettepe-analytics.github.io/emu430-spring2026-semameydan/)
+1.  [Sema Nur Meydan](https://emu-hacettepe-analytics.github.io/emu430-spring2026-semameydan/)
 
-2. [Eylül Ezgi Özer](https://emu-hacettepe-analytics.github.io/emu430-spring2026-eyluleozer/)
+2.  [Eylül Ezgi Özer](https://emu-hacettepe-analytics.github.io/emu430-spring2026-eyluleozer/)
 
-3. [Nursima Tek](https://github.com/emu-hacettepe-analytics/emu430-spring2026-nursimatek)
+3.  [Nursima Tek](https://github.com/emu-hacettepe-analytics/emu430-spring2026-nursimatek)
 
-4. [Mert Efe Zeybek](https://emu-hacettepe-analytics.github.io/emu430-spring2026-zeybek-mert/)
+4.  [Mert Efe Zeybek](https://emu-hacettepe-analytics.github.io/emu430-spring2026-zeybek-mert/)
 
 # Project Topic
 
@@ -29,11 +23,11 @@ For our project, the data set provided by the Orman Genel Müdürlüğü (OGM), 
 
 The selected data set includes the following information:
 
-- Number of forest fires by year
-- Total area burned (hectares)
-- Fire distribution by region
-- Fire causes
-- Detailed data by province and region
+-   Number of forest fires by year
+-   Total area burned (hectares)
+-   Fire distribution by region
+-   Fire causes
+-   Detailed data by province and region
 
 # Motivation and Purpose
 
@@ -47,18 +41,18 @@ The analyses will be conducted using the R programming language. During the anal
 
 ## 1. Temporal Analysis (Time Series)
 
-- The number of fires and area burned will be examined by year
-- Increasing/decreasing trends will be analyzed
+-   The number of fires and area burned will be examined by year
+-   Increasing/decreasing trends will be analyzed
 
 ## 2. Spatial Analysis (Regional Comparison)
 
-- Fire distribution by region will be compared
-- Risky regions will be identified
+-   Fire distribution by region will be compared
+-   Risky regions will be identified
 
 ## 3. Cause Analysis
 
-- The causes of fires will be analyzed
-- The proportion of human-caused fires will be examined
+-   The causes of fires will be analyzed
+-   The proportion of human-caused fires will be examined
 
 # Resource
 
